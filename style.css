@@ -1,0 +1,274 @@
+/* RESET + FUENTES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fde2e4;
+  color: #7a2e2e;
+  font-family: "Quicksand", sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 18px;
+  background: #ffb3c1;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #7a2e2e;
+}
+
+/* BOTÓN MÚSICA */
+#music-btn {
+  display: block;
+  margin: 15px auto;
+  background: #ff6b81;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+/* SECCIONES */
+.section {
+  padding: 45px 20px;
+}
+
+/* CONTENIDO */
+.content {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* FOTOS */
+.photo {
+  width: 260px;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 18px;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+/* FOTO ANCHA */
+.wide-photo {
+  display: block;
+  margin: 10px auto 0;
+  width: 420px;
+  height: 260px;
+}
+
+/* TEXTO */
+.text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 420px;
+  font-family: "Playfair Display", serif;
+}
+
+.highlight {
+  font-weight: 600;
+  color: #c9184a;
+}
+
+/* TEXTO PRINCIPAL DE AMOR */
+.love-text {
+  max-width: 700px;
+  margin: 20px auto 10px;
+  font-size: 1.35rem;
+  line-height: 1.9;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+}
+
+.love-text span {
+  display: block;
+  margin-top: 8px;
+  font-weight: 600;
+  color: #c9184a;
+}
+
+/* ANIMACIONES SUAVES */
+.fade-up {
+  opacity: 0;
+  transform: translateY(25px);
+  animation: fadeUp 1.2s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* CORAZONES */
+.heart {
+  position: fixed;
+  bottom: -20px;
+  animation: float 6s linear forwards;
+  color: #ff4d6d;
+}
+
+@keyframes float {
+  to {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .photo {
+    width: 220px;
+    height: 360px;
+  }
+
+  .wide-photo {
+    width: 90%;
+    height: 220px;
+  }
+
+  .text {
+    font-size: 1.1rem;
+  }
+
+  .navbar {
+    gap: 15px;
+    font-size: 0.95rem;
+  }
+}
+--------------------------------------------
+/* 💖 SECCIÓN MOMENTOS */
+.momentos {
+  background: #fff0f3;
+  border-radius: 30px;
+}
+
+.momentos-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 35px;
+  color: #c9184a;
+}
+
+/* GRID DE MOMENTOS */
+.momentos-grid {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+/* TARJETA */
+.momento {
+  background: white;
+  border-radius: 18px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.momento img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 12px;
+}
+
+.momento p {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: #7a2e2e;
+}
+
+
+/* ✨ ANIMACIÓN SUAVE */
+.fade-up {
+  opacity: 0;
+  transform: translateY(25px);
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+/* ❤️ SECCIÓN AMOR */
+.amor {
+  text-align: center;
+}
+
+.amor-title {
+  font-size: 2.2rem;
+  color: #c9184a;
+  margin-bottom: 12px;
+}
+
+.amor-text {
+  max-width: 650px;
+  margin: 0 auto 25px;
+  font-size: 1.3rem;
+  line-height: 1.8;
+}
+
+.amor-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.amor-list li {
+  font-size: 1.15rem;
+  margin: 10px 0;
+}
+
+.amor-media {
+  margin: 25px 0;
+}
+
+.amor-final {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #c9184a;
+  margin-top: 20px;
+}
+
+
+/* Texto normal debajo del amor-final */
+.amor-normal {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #7a2e2e;
+  display: block;
+  margin-top: 6px;
+}
